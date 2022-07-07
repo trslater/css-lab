@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Basic layout */
+.tree {
+    width: 300px;
+    margin: 50px;
+}
+.tree ul { padding-left: 10px; }
+.tree li { display: block; }
+.tree .proxy { display: none; }
+.tree label {
+    font-weight: bold;
+    display: block;
+    position: relative;
+}
+
+/* Closed/open bullet setup */
+.tree label::after {
+    display: block;
+
+    text-align: center;
+    line-height: 18px;
+    
+    background-color: white;;
+    width: 18px;
+    height: 18px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Closed/open bullet states */
+.tree .proxy         ~ label::after { content: "+"; }
+.tree .proxy:checked ~ label::after { content: "-"; }
+
+/* Hide/show  states */
+.tree .proxy         ~ ul { display: none; }
+.tree .proxy:checked ~ ul { display: block; }

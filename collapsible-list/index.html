@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Only Tree</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul class="tree">
+        <li>
+            <input class="proxy" id="proxy-1" type="radio" name="top">
+            <label for="proxy-1">Fruit</label>
+            <ul>
+                <li>
+                    <input class="proxy" id="proxy-2" type="radio" name="top-a">
+                    <label for="proxy-2">Drupes</label>
+                    <ul>
+                        <li>Apricot</li>
+                        <li>Peach</li>
+                        <li>
+                            <input class="proxy" id="proxy-3" type="checkbox">
+                            <label for="proxy-3">Plum</label>
+                            <ul>
+                                <li>Prune</li>
+                                <li>French</li>
+                                <li>Black Beauty</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Orange</li>
+                <li>
+                    <input class="proxy" id="proxy-4" type="radio" name="top-a">
+                    <label for="proxy-4">Apples</label>
+                    <ul>
+                        <li>Granny Smith</li>
+                        <li>Golden Delicious</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input class="proxy" id="proxy-5" type="radio" name="top">
+            <label for="proxy-5">Vegetables</label>
+            <ul>
+                <li>
+                    <input class="proxy" id="proxy-6" type="radio" name="top-b">
+                    <label for="proxy-6">Squashes</label>
+                    <ul>
+                        <li>Butternut</li>
+                        <li>Buttercup</li>
+                        <li>Spaghetti</li>
+                    </ul>
+                </li>
+                <li>Cucumber</li>
+                <li>
+                    <input class="proxy" id="proxy-7" type="radio" name="top-b">
+                    <label for="proxy-7">Leafy Greens</label>
+                    <ul>
+                        <li>Spinach</li>
+                        <li>Lettuce</li>
+                        <li>Kale</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
